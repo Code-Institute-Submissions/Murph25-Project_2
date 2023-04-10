@@ -1,7 +1,7 @@
 body{
     Background-color:white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:aliceblue
+    color:aliceblue;
     text-align: center;
 }
 .heading{
@@ -10,24 +10,51 @@ body{
 }
 .game {
     background-color: darkcyan;
-    box-sizing: border-box;
+    box-sizing: borderbox;
     width: 75%;
     height:auto;
-    max-height: ;
-    max-width:;
-    text-align:center
+    margin:auto;
+    margin-top:1%;
+    text-align:center;
+}
+.control{
+    display:inline-block;
+    margin:2px;
+    width:80px;
+    height:40px;
 }
 
+#message{
+    height: 15px;
+}
 
+.player{
+    background-color: darkcyan;
+    float:left;
+    width:40%;
+}
+#player-image{
+    width: 75%;
+}
+
+.computer{
+    background-color: darkcyan;
+    float: right;
+    width:40% ;
+}
+#computer-image{
+    width:75%;
+}
 
 footer{
     position: absolute;
     width: 100%;
     left:0;
-    bottom: 0;
+    bottom:0;
     box-sizing: border-box;
-    min height: 80px;
-    padding-top: 2px;
+    max-height: 200px;
+    margin-top: 50px;
+    
     text-align: center;
     color:darkcyan;
     background-color: aliceblue;
