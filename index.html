@@ -5,24 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Stream One</title>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
-    <h1>Stream One</h1>
-    <div class="card">
-        <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/195px-HTML5_logo_and_wordmark.svg.png" alt="HTML5">
-            <h2>HTML 5</h2>
-        </a>
-    </div>
-    <div class="card">
-        <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/180px-CSS3_logo_and_wordmark.svg.png" alt="CSS3">
-            <h2>CSS3</h2>
-        </a>
-
-    </div>
-    <script src="assets/js/script.js"></script>
+    <header>
+        <h1 class= "heading">Rock, Paper, Scissors
+        </h1>
+    </header>
+    <section class="game">
+        <div>
+            <p>Pick:</p>
+            <button aria-label="rock" data-choices="0" class="control">Rock</button>
+            <button aria-label="paper" data-choices="1" class="control">Paper</button>
+            <button aria-label="scissors" data-choices="2" class="control">Scissors</button>
+        </div>
+        <div id="message"></div>
+        <div class="player">
+            <h3 class="Score">My Score:<span id="player-score">0</span></h3>
+            <img id="play-image" src="assets/css/images/Screenshot 2023-04-10 114609.png" alt="Rock Paper Scissors">
+        </div>
+        <div class="computer">
+            <h3 class="Score">Computer Score:<span id="computer-score">0</span></h3>
+            <img id="play-image" src="assets/css/images/Screenshot 2023-04-10 114609.png" alt="Rock Paper Scissors">
+        </div>
+    </section>
+    <script src="assets/css/js/script.js"></script>
 </body>
+<footer>
+    <h3>Rules:</h3>
+    <p>Rock beats scissors.</p>
+    <p>Scissors beats paper.</p>
+    <p>Paper beats Rock.</p>
+</footer>
 </html>
