@@ -1,3 +1,34 @@
 body{
-    background-color:
+    Background-color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue
+    text-align: center;
+}
+.heading{
+    text-align: center;
+    height: 100px;
+}
+.game {
+    background-color: darkcyan;
+    box-sizing: border-box;
+    width: 75%;
+    height:auto;
+    max-height: ;
+    max-width:;
+    text-align:center
+}
+
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    left:0;
+    bottom: 0;
+    box-sizing: border-box;
+    min height: 80px;
+    padding-top: 2px;
+    text-align: center;
+    color:darkcyan;
+    background-color: aliceblue;
 }
