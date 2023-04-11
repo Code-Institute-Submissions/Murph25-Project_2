@@ -1,27 +1,54 @@
-const buttons= document.getElementsByClassName("control");
-const playerScore= document.getElementById("player-score");
-const computerScore= document.getElementById("computer-score");
-const playerImage = document.getElementById("player-image");
-const computerImage = document.getElementById("computer-image");
-const messages = document.getElementById("messages");
-const choices = ["rock","paper", "scissors"];
+const computerChoiceDisplay = document.getElementById("computer-choice")
+const userChoiceDisplay = document.getElementById("user-choice")
+const resultDisplay = document.getElementById("result")
+const possibleChoices =  document.querySelectorAll('button')
+let userChoice
+let computerChoice
+let result
 
-for (let button of buttons){
-    button.addEventListener("click",function(){
-        let playerChoice = this.getAttribute("data-choice");
-        playGame(playerChoice);
-    })
+possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
+  userChoice = e.target.id
+  userChoiceDisplay.innerHTML = userChoice
+  generateComputerChoice()
+  getResult()
+}))
+
+function generateComputerChoice() {
+  const randomNumber = Math.floor(Math.random() * 3) + 1 // or you can use possibleChoices.length
+  
+  if (randomNumber === 1) {
+    computerChoice = 'Rock'
+  }
+  if (randomNumber === 2) {
+    computerChoice = 'Scissors'
+  }
+  if (randomNumber === 3) {
+    computerChoice = 'Paper'
+  }
+  computerChoiceDisplay.innerHTML = computerChoice
 }
-function playGame(playerChoice){
-    
-    playerImage.src = assets/css/images/${choices[playerChoice]}.png;
-    playerImage.alt = choices[playerChoice];
 
-    let computerCHoice = Math.floor(Math.random()*3);
-
-    computerImage.src = assets/css/images/${choices[computerChoice]}.png;
-    computerImage.alt = choices[computerChoice];
-
-    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
-    updateScores(result);
+function getResult() {
+  if (computerChoice === userChoice) {
+    result = "It's a draw!"
+  }
+  if (computerChoice === 'Rock' && userChoice === "Paper") {
+    result = "You win!"
+  }
+  if (computerChoice === 'Rock' && userChoice === "Scissors") {
+    result = "You lost!"
+  }
+  if (computerChoice === 'Paper' && userChoice === "Scissors") {
+    result = "You win!"
+  }
+  if (computerChoice === 'Paper' && userChoice === "Rock") {
+    result = "You lose!"
+  }
+  if (computerChoice === 'Scissors' && userChoice === "Rock") {
+    result = "You win!"
+  }
+  if (computerChoice === 'Scissors' && userChoice === "Paper") {
+    result = "You lose!"
+  }
+  resultDisplay.innerHTML = result
 }

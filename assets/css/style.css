@@ -1,15 +1,19 @@
 body{
     Background-color:white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:aliceblue;
+    color: darkcyan;
     text-align: center;
 }
 .heading{
-    text-align: center;
     height: 100px;
+    padding-top: 10px;
+    
 }
-.game {
-    background-color: darkcyan;
+.image{
+    width: 25%;
+}
+.game-area {
+    background-color:black;
     box-sizing: borderbox;
     width: 75%;
     height:auto;
@@ -23,39 +27,17 @@ body{
     width:80px;
     height:40px;
 }
-
-#message{
-    height: 15px;
-}
-
-.player{
-    background-color: darkcyan;
-    float:left;
-    width:40%;
-}
-#player-image{
-    width: 75%;
-}
-
-.computer{
-    background-color: darkcyan;
-    float: right;
-    width:40% ;
-}
-#computer-image{
-    width:75%;
-}
-
 footer{
     position: absolute;
-    width: 100%;
     left:0;
-    bottom:0;
-    box-sizing: border-box;
+    bottom:20px;
     max-height: 200px;
     margin-top: 50px;
-    
     text-align: center;
     color:darkcyan;
-    background-color: aliceblue;
+}
+#rules {
+    color:darkcyan;
+    float: right;
+    
 }

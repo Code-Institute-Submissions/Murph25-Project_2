@@ -11,31 +11,24 @@
     <header>
         <h1 class= "heading">Rock, Paper, Scissors
         </h1>
+        <img class="image" src="assets/css/images/rock-paper-scissors-ge55ffe339_1280.png">
+    
     </header>
-    <section class="game">
-        <div>
-            <p>Pick:</p>
-            <button aria-label="rock" data-choices="0" class="control">Rock</button>
-            <button aria-label="paper" data-choices="1" class="control">Paper</button>
-            <button aria-label="scissors" data-choices="2" class="control">Scissors</button>
-        </div>
-        <div id="message"></div>
-        <div class="player">
-            <h3 class="Score">My Score:<span id="player-score">0</span></h3>
-            <img id="play-image" src="assets/css/images/Screenshot 2023-04-10 114609.png" alt="Rock Paper Scissors">
-        </div>
-        <div class="computer">
-            <h3 class="Score">Computer Score:<span id="computer-score">0</span></h3>
-            <img id="play-image" src="assets/css/images/Screenshot 2023-04-10 114609.png" alt="Rock Paper Scissors">
-        </div>
-    </section>
-    <script src="assets/css/js/script.js"></script>
+    <div class="game-area">
+        <h2>Computer Choice: <span id="computer-choice"></span></h2>
+        <h2>Your Choice: <span id="user-choice"></span></h2>
+        <h2>Result: <span id="result"></span></h2>
+    
+        <button aria-label="rock" class="control" id="rock"><i class="fa-solid fa-hand-fist"></i>Rock</button>
+        <button aria-label="paper" class="control" id="paper"><i class="fa-regular fa-hand"></i>Paper</button>
+        <button aria-label="scissors" class="control" id="scissors"><i class="fa-solid fa-hand-scissors"></i>Scissors</button>
+    
+        <script src="assets/css/js/script.js" ></script>
+    </div>
 </body>
-<hr>
+
 <footer>
-    <h3>Rules:</h3>
-    <p>Rock beats scissors.</p>
-    <p>Scissors beats paper.</p>
-    <p>Paper beats Rock.</p>
+    <button aria-label="rules" id="rules" ><i class="fa-solid fa-info"></i></button>
+    <script src="https://kit.fontawesome.com/61d379e170.js" crossorigin="anonymous"></script>
 </footer>
 </html>
