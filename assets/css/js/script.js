@@ -32,22 +32,22 @@ function getResult() {
   if (computerChoice === userChoice) {
     result = "It's a draw!"
   }
-  if (computerChoice === "Rock" && userChoice === "Paper") {
+  if (computerChoice === "rock" && userChoice === "paper") {
     result = "You win!"
   }
-  if (computerChoice === "Rock" && userChoice === "Scissors") {
+  if (computerChoice === "rock" && userChoice === "scissors") {
     result = "You lost!"
   }
-  if (computerChoice === "Paper" && userChoice === "Scissors") {
+  if (computerChoice === "paper" && userChoice === "scissors") {
     result = "You win!"
   }
-  if (computerChoice === "Paper" && userChoice === "Rock") {
+  if (computerChoice === "paper" && userChoice === "rock") {
     result = "You lose!"
   }
-  if (computerChoice === "Scissors" && userChoice === "Rock") {
+  if (computerChoice === "scissors" && userChoice === "rock") {
     result = "You win!"
   }
-  if (computerChoice === "Scissors" && userChoice === "Paper") {
+  if (computerChoice === "scissors" && userChoice === "paper") {
     result = "You lose!"
   }
   resultDisplay.innerHTML = result
@@ -77,4 +77,17 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+function incrementScore() {
+
+  let oldScore = parseInt(document.getElementById("score").innerText);
+  document.getElementById("score").innerText = ++oldScore;
+}
+/**
+* Gets the current tally of incorrect answers from the DOM and increments it by 1
+*/
+function incrementWrongAnswer() {
+
+  let oldScore = parseInt(document.getElementById("incorrect").innerText);
+  document.getElementById("incorrect").innerText = ++oldScore;
 }
