@@ -89,3 +89,12 @@ body{
   display: block;
   padding: 5px;
 }
+
+@media screen and (max-width:600px) {
+  .heading{
+      width: 100%;
+  }
+  .control{
+      flex-direction: column;
+  }
+}

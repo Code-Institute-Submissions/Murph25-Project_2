@@ -34,21 +34,27 @@ function getResult() {
   }
   if (computerChoice === "rock" && userChoice === "paper") {
     result = "You win!"
+    incrementScore();
   }
   if (computerChoice === "rock" && userChoice === "scissors") {
     result = "You lost!"
+    incrementWrongAnswer()
   }
   if (computerChoice === "paper" && userChoice === "scissors") {
     result = "You win!"
+    incrementScore();
   }
   if (computerChoice === "paper" && userChoice === "rock") {
     result = "You lose!"
+    incrementWrongAnswer();
   }
   if (computerChoice === "scissors" && userChoice === "rock") {
     result = "You win!"
+    incrementScore();
   }
   if (computerChoice === "scissors" && userChoice === "paper") {
     result = "You lose!"
+    incrementWrongAnswer()
   }
   resultDisplay.innerHTML = result
 }
@@ -79,19 +85,4 @@ function incrementWrongAnswer() {
 
   let oldScore = parseInt(document.getElementById("incorrect").innerText);
   document.getElementById("incorrect").innerText = ++oldScore;
-}
-function playRound() {
-  if (playerSelection === computerSelection) {
-    userScore++;
-    computerScore++;
-  } else if ((playerSelection === choises.rock && computerSelection === choises.scissors) ||
-    (playerSelection === choises.rock && computerSelection === choises.rock) ||
-    (playerSelection === choises.scissors && computerSelection === choises.paper)) {
-    userScore++;
-  } else {
-    computerScore++;
-  }
-
-  scoreWindow.innerHTML = userScore + ' : ' + computerScore;
-  return (computerScore, userScore);
 }
