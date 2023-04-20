@@ -95,6 +95,6 @@ body{
       width: 100%;
   }
   .control{
-      flex-direction: column;
+      width: 80%;
   }
 }
