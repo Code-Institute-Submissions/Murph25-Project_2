@@ -13,7 +13,30 @@ Rock, paper scissors is a simple fun game in which both the players have to pick
 - As a first time user, I would like to be able to see how many games i have won and lost.
 
 ## Features:
-- Site wide:
+- Home Page
+
+The home page demonstrated a user interactive game with rules and instructions as described below.
+
+![site homepage](/assets/css/Readme/homepage.png)
+
+- ScoreBoard
+
+A user can see the current score between the user and computer in below screen.
+
+![site homepage](/assets/css/Readme/score.png)
+
+- User Choice Buttons
+
+A user will have three different buttons to choose the input on his/her turn. The options are as below.Each button has a pictorial representation of the options.
+
+- Rock
+Paper
+Scissors
+
+
+
+
+
 
 
 
