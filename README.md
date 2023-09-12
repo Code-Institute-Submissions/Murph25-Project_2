@@ -27,11 +27,46 @@ A user can see the current score between the user and computer in below screen.
 
 - User Choice Buttons
 
-A user will have three different buttons to choose the input on his/her turn. The options are as below.Each button has a pictorial representation of the options.
+A user will have three different buttons to choose the input on his/her turn. The options are rock, paper or scissors.Each button has a pictorial representation of the options.
 
-- Rock
-Paper
-Scissors
+![site homepage](/assets/css/Readme/options.png)
+
+- info Button
+
+This is a pop-up button. On user click it opens the game instructions. User can click on the 'x' or anywhere outside the pop-up to come back to main page.
+
+![site homepage](/assets/css/Readme/instructions.png)
+
+## Technolgies
+
+- HTML
+
+The structure of the Website was developed using HTML as the main language.
+- CSS
+
+The Website was styled using custom CSS in an external file.
+- JavaScript
+
+The game play logic was created using JavaScript.
+
+- GitHub
+
+Source code is hosted on GitHub and delpoyed using Git Pages.
+- Git
+
+Used to commit and push code during the development of the Website
+
+## Testing
+
+There is one glitch that i am aware of that i have been unable to fix. When rapidly making choices between rock, paper an scissors sometimes the selection will not load. This only appears to happen when making rapid selections and appears to be a problem with not loading quickly enough. evn after alot of searching and with help from my mentor i have been unable to fix this error. 
+
+## Validator Testing
+
+
+
+
+
+
 
 
 
