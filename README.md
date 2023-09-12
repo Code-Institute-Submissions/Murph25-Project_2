@@ -56,11 +56,53 @@ Source code is hosted on GitHub and delpoyed using Git Pages.
 
 Used to commit and push code during the development of the Website
 
+
 ## Testing
 
 There is one glitch that i am aware of that i have been unable to fix. When rapidly making choices between rock, paper an scissors sometimes the selection will not load. This only appears to happen when making rapid selections and appears to be a problem with not loading quickly enough. evn after alot of searching and with help from my mentor i have been unable to fix this error. 
 
 ## Validator Testing
+
+- HTML
+
+No errors were found in testing.
+
+- CSS
+
+No errors were found in testing.
+
+- Javascript
+
+No errors were found in testing.
+
+- Lighthouse
+
+Accessibility score of 100.
+Performance score of 94.
+
+## Deployment
+
+Website deployed on Github and written on Gitpod.
+
+In Git hub Repository go to settings
+
+Navigate to 'pages' and select 'main' from 'branch' dropdown menu.
+
+Click save.
+
+After a few minutes the link will be available
+
+Here is the live link : https://murph25.github.io/Project_2/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,3 +119,11 @@ There is one glitch that i am aware of that i have been unable to fix. When rapi
 
 
 [def]: //assets/css/Readme/mockup.png
+
+##Credits
+
+- Youtube channel Kevin powell - for various supports in understanding ideas and concepts
+- W3C - for understanding concepts and problem solving
+- pexels.com - for free images
+- typ.io - for selecting fonts to use
+- colormind.io - for selecting colours
